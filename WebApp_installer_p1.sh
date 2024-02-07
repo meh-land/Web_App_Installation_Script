@@ -145,6 +145,7 @@ echo ""
 echo ">>> {Checking PHP Version...}"
 echo ""
 cd
+source ~/.bashrc
 php -v
 echo ">>> {Please Make Sure That PHP is The Correct Version---8.1.x}"
 echo ""
