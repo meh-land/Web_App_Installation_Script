@@ -10,7 +10,10 @@ host_name=$(hostname)
 dumdum_pass='123'
 backend_dir='/home/$user_name/GP_laravel'
 frontend_dir='/home/$user_name/Dashboard'
-machine_ip='192.168.100.106'
+# Make sure ifconfig is installed (not installed by default on ubuntu)
+sudo apt install net-tools -y
+# Get machine IP
+machine_ip="$(ifconfig enp0s3 |grep "inet " | awk '{print $2}')"
 
 echo "#######################################################################################################################"
 
