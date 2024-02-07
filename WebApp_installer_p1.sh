@@ -42,8 +42,6 @@ sudo apt update
 echo ">>> {Done: Update Successful}"
 echo ""
 
-# TODO: see if upgrading like this sets curl up
-
 echo ">>> {Upgrading Packages (This may take a while)...}"
 echo ""
 sudo apt install curl -y
@@ -112,6 +110,7 @@ echo ""
 
 echo ">>> {Downloading PHP Source Code...}"
 echo ""
+cd ~
 wget https://www.php.net/distributions/php-8.1.0.tar.gz
 echo ">>> {Done: Download Successful}"
 echo ""
@@ -158,6 +157,7 @@ echo ""
 
 echo ">>> {Installing composer...}"
 echo ""
+cd ~
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 echo ">>> {Done: Installation Successful}"
@@ -177,6 +177,7 @@ echo ""
 
 echo ">>> {Installing laravel...}"
 echo ""
+cd ~
 composer global require laravel/installer
 echo ">>> {Done: Installation Successful}"
 echo ""
@@ -194,7 +195,7 @@ echo ""
 
 echo ">>> {Installing Node Version Manager (nvm)...}"
 echo ""
-cd
+cd ~
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 source ~/.bashrc
 echo ">>> {Done: Installation Successful}"
