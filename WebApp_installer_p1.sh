@@ -36,7 +36,7 @@ echo "##########################################################################
 echo ">>> {Step 1: Update and Upgrade Packages}"
 echo ""
 
-echo ">>> {Updating Packages...}"
+echo ">>> {Updating Packages (This may take a while)...}"
 echo ""
 sudo apt update
 echo ">>> {Done: Update Successful}"
@@ -44,11 +44,11 @@ echo ""
 
 # TODO: see if upgrading like this sets curl up
 
-echo ">>> {Upgrading Packages...}"
+echo ">>> {Upgrading Packages (This may take a while)...}"
 echo ""
-# sudo apt install curl -y
-# sudo apt install git -y
-# sudo apt install net-tools
+sudo apt install curl -y
+sudo apt install git -y
+sudo apt install net-tools -y
 sudo apt upgrade -y
 echo ">>> {Done: Upgrade Successful}"
 echo ""
