@@ -104,7 +104,7 @@ echo ""
 
 echo ">>> {Installing Required Dependencies...}"
 echo ""
-sudo apt install -y build-essential libxml2-dev libsqlite3-dev curl libcurl4-openssl-dev pkg-config libssl-dev libonig-dev libzip-dev zlib1g-dev libpng-dev libjpeg-dev libfreetype6-dev libgmp-dev libpq-dev libicu-dev libbz2-dev libxpm-dev libwebp-dev libtidy-dev libxslt1-dev
+sudo apt install -y build-essential libxml2-dev libsqlite3-dev curl libcurl4-openssl-dev pkg-config libssl-dev libonig-dev libzip-dev zlib1g-dev libpng-dev libjpeg-dev libfreetype6-dev libgmp-dev libpq-dev libicu-dev libbz2-dev libxpm-dev libwebp-dev libtidy-dev libxslt1-dev zip
 echo ">>> {Done: Installation Successful}"
 echo ""
 
