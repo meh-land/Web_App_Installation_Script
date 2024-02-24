@@ -1,11 +1,14 @@
 #!/bin/bash -eu
 
-# The BSD License
+# This function prints the name of the current running section in a different color
+# Useful for debugging and tracing
+section () {
+	tput setaf 1
+	echo $1
+	tput sgr0
+}
 
-# print each command before executing
-#set -x
-
-user_name=$(whoami)
+user_name=$USER
 host_name=$(hostname)
 dumdum_pass='123'
 echo "#######################################################################################################################"
