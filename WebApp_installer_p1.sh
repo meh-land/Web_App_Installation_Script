@@ -138,6 +138,7 @@ echo ""
 echo ">>> {Updating System Path...}"
 echo ""
 echo 'export PATH="/usr/local/php/bin:$PATH"' >> ~/.bashrc
+export PATH="/usr/local/php/bin:$PATH"
 source ~/.bashrc
 echo ">>> {Done: Updated Successfully}"
 echo ""
