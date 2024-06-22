@@ -48,6 +48,7 @@ echo ">>> {Adjusting Final Settings...}"
 echo ""
 php artisan key:generate
 php artisan migrate
+php artisan passport:install
 echo ">>> {Done: Adjustments Successful}"
 echo ""
 
